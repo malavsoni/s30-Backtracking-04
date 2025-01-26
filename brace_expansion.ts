@@ -24,7 +24,7 @@ function brace_expansion(input: string): string[] {
       group.push(char);
       idx++;
     }
-    group.sort((a, b) => a.charCodeAt(0) - b.charCodeAt(0));
+    group.sort((a, b) => a.charCodeAt(0) - b.charCodeAt(0));  // K log k
     groups.push(group);
   }
 
